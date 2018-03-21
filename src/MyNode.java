@@ -1,4 +1,3 @@
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -78,6 +77,9 @@ public class MyNode  implements Runnable {
 			messageReceived = message.getMessage();
 			state = messageReceived;
 			receivedTime = System.nanoTime();
+			System.out.println("NodeID: " + nodeID + " has received the message");
+			
+			
 
 			TimerTask repeatedTask = new TimerTask() {
 				public void run() {
@@ -90,6 +92,7 @@ public class MyNode  implements Runnable {
 			Random r = new Random();
          	long period = r.nextInt(network.getMaxDelay() - network.getMinDelay()) + network.getMinDelay();
 			timer.scheduleAtFixedRate(repeatedTask, 0, period);
+			
 
 		}
 	}

@@ -201,7 +201,7 @@ public class Cluster {
 	}
 	
 	/**
-	 * Getter method for the time elapsed in miliseconds running the algorithm.
+	 * Getter method for the time elapsed in milliseconds running the algorithm.
 	 * @return
 	 */
 	public Double getElapsedTime() {

@@ -23,9 +23,10 @@ public class Network implements Runnable {
 	/**
 	 * Constructor for the network class where the user is asked to set the interval of delay of the network.
 	 */
-	public Network() {
+	public Network(int minDelay, int maxDelay) {
 
-		setDelayInterval();
+		this.minDelay = minDelay;
+		this.maxDelay = maxDelay;
 		dropProb = 0.0;
 	}
 	
@@ -33,9 +34,9 @@ public class Network implements Runnable {
 	 * Constructor for the network class. Minimum and maximum delay of the network are set by default (900-1100 ms).
 	 * @param dropProb The probability of dropping a message by the network.
 	 */
-	public Network(Double dropProb) {
-		minDelay = 400;
-		maxDelay = 600;
+	public Network(int minDelay, int maxDelay, Double dropProb) {
+		this.minDelay = minDelay;
+		this.maxDelay = maxDelay;
 		this.dropProb = dropProb;
 	}
 
@@ -101,33 +102,33 @@ public class Network implements Runnable {
 		this.nodeList = nodeList;
 	}
 
-	/**
-	 * Ask the user via StdIn to set a custom interval delay of the network.
-	 */
-	public void setDelayInterval() {
-
-		Scanner reader = new Scanner(System.in);
-
-		System.out.println("Set minimum delay of the network (in ms): ");
-		minDelay = reader.nextInt(); // Set minimum delay
-
-		System.out.println("Set maximum delay of the network (in ms): ");
-		maxDelay = reader.nextInt(); // Set maximum delay
-		
-		// close scanner
-		reader.close();
-		
-		//Checks on the user input
-		if(minDelay >= maxDelay) {
-			System.err.println("The minimum delay should be smaller than the maximum delay");
-			System.exit(0);
-		}
-		
-		if((minDelay <= 0) || (maxDelay <= 0)) {
-			System.err.println("The delay of the network should be a positive number");
-			System.exit(0);
-		}
-	}
+//	/**
+//	 * Ask the user via StdIn to set a custom interval delay of the network.
+//	 */
+//	public void setDelayInterval() {
+//
+//		Scanner reader = new Scanner(System.in);
+//
+//		System.out.println("Set minimum delay of the network (in ms): ");
+//		minDelay = reader.nextInt(); // Set minimum delay
+//
+//		System.out.println("Set maximum delay of the network (in ms): ");
+//		maxDelay = reader.nextInt(); // Set maximum delay
+//		
+//		// close scanner
+//		reader.close();
+//		
+//		//Checks on the user input
+//		if(minDelay >= maxDelay) {
+//			System.err.println("The minimum delay should be smaller than the maximum delay");
+//			System.exit(0);
+//		}
+//		
+//		if((minDelay <= 0) || (maxDelay <= 0)) {
+//			System.err.println("The delay of the network should be a positive number");
+//			System.exit(0);
+//		}
+//	}
 	
 	/**
 	 * Stop the timer.
