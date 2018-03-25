@@ -31,7 +31,7 @@ public class q2 {
 			System.exit(0);
 		}
 		
-		if ((Integer.parseInt(args[1]) < 0) || (Integer.parseInt(args[1]) > parser.parseGraph().size())) {
+		if ((Integer.parseInt(args[1]) < 0) || (Integer.parseInt(args[1]) >= parser.parseGraph().size())) {
 			System.err.println("Error: Please submit a valid origin node");
 			System.exit(0);
 		}

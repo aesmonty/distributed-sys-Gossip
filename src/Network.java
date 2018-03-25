@@ -1,6 +1,5 @@
 import java.util.List;
 import java.util.Random;
-import java.util.Scanner;
 import java.util.Timer;
 import java.util.TimerTask;
 
