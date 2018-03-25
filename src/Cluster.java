@@ -100,7 +100,7 @@ public class Cluster {
 
 		killAllNodes();
 		killNetwork();
-		printTimes();
+		
 		
 		//Create a txt file and write the time log results to it.
 		try {
@@ -165,7 +165,7 @@ public class Cluster {
 
 		killAllNodes();
 		killNetwork();
-		printTimes();
+		
 
 	}
 	
@@ -231,7 +231,7 @@ public class Cluster {
 	private void printTimesFile() throws IOException, UnsupportedEncodingException {
 		
 		sortTimesList();
-		PrintWriter writer = new PrintWriter("timesLog.txt", "UTF-8");
+		PrintWriter writer = new PrintWriter("./log/q1.txt", "UTF-8");
 		
 		
 		for (MyNode node : nodeList) {

@@ -73,9 +73,10 @@ public class q1 {
 		cluster.deployNodes();
 
 		// Start protocol
+		
 		cluster.startPushA(Integer.parseInt(args[1]));
 		
-		System.exit(0);
+		
 
 	}
 

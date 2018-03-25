@@ -102,33 +102,6 @@ public class Network implements Runnable {
 		this.nodeList = nodeList;
 	}
 
-//	/**
-//	 * Ask the user via StdIn to set a custom interval delay of the network.
-//	 */
-//	public void setDelayInterval() {
-//
-//		Scanner reader = new Scanner(System.in);
-//
-//		System.out.println("Set minimum delay of the network (in ms): ");
-//		minDelay = reader.nextInt(); // Set minimum delay
-//
-//		System.out.println("Set maximum delay of the network (in ms): ");
-//		maxDelay = reader.nextInt(); // Set maximum delay
-//		
-//		// close scanner
-//		reader.close();
-//		
-//		//Checks on the user input
-//		if(minDelay >= maxDelay) {
-//			System.err.println("The minimum delay should be smaller than the maximum delay");
-//			System.exit(0);
-//		}
-//		
-//		if((minDelay <= 0) || (maxDelay <= 0)) {
-//			System.err.println("The delay of the network should be a positive number");
-//			System.exit(0);
-//		}
-//	}
 	
 	/**
 	 * Stop the timer.
