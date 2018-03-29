@@ -86,7 +86,8 @@ public class q1 {
 
 		cluster.deployNetwork();
 		cluster.deployNodes();
-
+                 
+                System.out.println("Nodes Msg Received IDs");
 		// Start protocol
 		cluster.startPushA(Integer.parseInt(args[1]));
 

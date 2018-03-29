@@ -77,7 +77,7 @@ public class MyNode  implements Runnable {
 			messageReceived = message.getMessage();
 			state = messageReceived;
 			receivedTime = System.nanoTime();
-			System.out.println("NodeID: " + nodeID + " has received the message");
+			System.out.println(nodeID);
 			
 			
 

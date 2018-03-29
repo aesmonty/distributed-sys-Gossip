@@ -85,7 +85,8 @@ public class q2 {
 		// Deploy nodes and network on the cluster and star algorithm
 		cluster.deployNetwork();
 		cluster.deployNodes();
-
+                
+                System.out.println("Nodes Msg Received IDs");
 		cluster.startPushB(Integer.parseInt(args[1]));
 
 	}
