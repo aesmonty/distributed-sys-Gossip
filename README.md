@@ -1,6 +1,6 @@
 # Gossip protocol Simulator
 
-This projects consists on an asynchronous distributed systems simulator, focused on the study of gossip algorithms. In particular, the PUSH protocol is implemented for typical graph topologies.
+This project consists on an asynchronous distributed systems simulator, focused on the study of gossip algorithms. In particular, the PUSH protocol is implemented for typical graph topologies.
 
 ## Getting Started
 
