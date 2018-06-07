@@ -30,7 +30,7 @@ To compile the Java project:
 ```
 To run the different versions of the simulator (q1, q2 or q3):
 ```
-./run.sh q (where X can be 1, 2 or 3)
+./run.sh qX (where X can be 1, 2 or 3) <inputGraph> <startingNode>
 ```
 An example taking as input a Barbell graph and setting node 2 as the starting node:
 
